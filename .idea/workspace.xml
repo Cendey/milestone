@@ -977,7 +977,7 @@
       <workItem from="1513303032476" duration="873000" />
       <workItem from="1513304094545" duration="1049000" />
       <workItem from="1513390924520" duration="1909000" />
-      <workItem from="1513393955089" duration="444000" />
+      <workItem from="1513393955089" duration="460000" />
     </task>
     <task id="LOCAL-00001" summary="update vcs configuration">
       <created>1513394384887</created>
@@ -986,7 +986,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513394384887</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update vcs configuration">
+      <created>1513394405452</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1513394405452</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1022,7 +1029,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209356000" />
+    <option name="totallyTimeSpent" value="209372000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
