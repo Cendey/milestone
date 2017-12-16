@@ -1,0 +1,1571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6165ef0f-1f17-4125-b58c-3bafaed610ed" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/bin/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CloverPlugin" class="com.atlassian.clover.idea.config.IdeaCloverConfig">
+    <includePassedTestCoverageOnly>true</includePassedTestCoverageOnly>
+    <useGeneratedInitString>true</useGeneratedInitString>
+    <manualInitString null="true" />
+    <showTooltips>true</showTooltips>
+    <failedCoveredHighlight>-11513856</failedCoveredHighlight>
+    <periodicRefresh>false</periodicRefresh>
+    <languageLevel>1.8 - lambda functions, virtual extension methods.</languageLevel>
+    <instrumentLambda class="com.atlassian.clover.cfg.instr.java.LambdaInstrumentation">ALL</instrumentLambda>
+    <testCaseLayout class="com.atlassian.clover.idea.config.TestCaseLayout">TEST_CASES</testCaseLayout>
+    <autoScrollFromSource>false</autoScrollFromSource>
+    <coveredHighlight>-16756736</coveredHighlight>
+    <outOfDateStripe>-256</outOfDateStripe>
+    <excludes null="true" />
+    <includes null="true" />
+    <alwaysExpandTestClasses>false</alwaysExpandTestClasses>
+    <autoViewInCloudReport>true</autoViewInCloudReport>
+    <filteredHighlight>-11513776</filteredHighlight>
+    <flushPolicy>0</flushPolicy>
+    <outOfDateHighlight>-16777201</outOfDateHighlight>
+    <showInline>true</showInline>
+    <dumpInstrumentedSources>false</dumpInstrumentedSources>
+    <hideFullyCovered>false</hideFullyCovered>
+    <autoRefresh>true</autoRefresh>
+    <modelScope class="com.atlassian.clover.idea.util.ModelScope">APP_CLASSES_ONLY</modelScope>
+    <coveredStripe>-16711936</coveredStripe>
+    <highlightCovered>true</highlightCovered>
+    <viewCoverage>true</viewCoverage>
+    <notCoveredHighlight>-11534336</notCoveredHighlight>
+    <relativeInitString>false</relativeInitString>
+    <failedCoveredStripe>-14336</failedCoveredStripe>
+    <testViewScope class="com.atlassian.clover.idea.config.TestViewScope">GLOBAL</testViewScope>
+    <showGutter>true</showGutter>
+    <alwaysCollapseTestClasses>false</alwaysCollapseTestClasses>
+    <notCoveredStripe>-65536</notCoveredStripe>
+    <autoScroll>true</autoScroll>
+    <calculateTestCoverage>true</calculateTestCoverage>
+    <autoRefreshInterval>2000</autoRefreshInterval>
+    <generatedInitString>D:\Workbench\Workspace\Developer\GitHub\projects\blueprint\.clover\coverage.db</generatedInitString>
+    <regexpContexts class="java.util.ArrayList" />
+    <flushInterval>5000</flushInterval>
+    <flattenPackages>false</flattenPackages>
+    <viewIncludeAnnotation>true</viewIncludeAnnotation>
+    <loadPerTestData>true</loadPerTestData>
+    <showErrorMarks>true</showErrorMarks>
+    <buildWithClover>true</buildWithClover>
+    <lastProjectConfigTabSelected>2</lastProjectConfigTabSelected>
+    <contextFilterSpec />
+    <instrumentTests>true</instrumentTests>
+    <span>0 days</span>
+    <projectRebuild class="com.atlassian.clover.idea.config.ProjectRebuild">ALWAYS</projectRebuild>
+    <showSummaryInToolbar>true</showSummaryInToolbar>
+    <filteredStripe>-4144960</filteredStripe>
+    <cloudReportIncludeSubpkgs>false</cloudReportIncludeSubpkgs>
+    <enabled>true</enabled>
+    <showSummaryInToolwindow>true</showSummaryInToolwindow>
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Blueprint$SeatsAllocationTest.coverage" NAME="SeatsAllocationTest Coverage Results" MODIFIED="1494210108584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.mit.lab.unit.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Blueprint" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="FunctionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/mit/lab/unit/FunctionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Generic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mit/lab/norm/Generic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Function.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mit/lab/intf/Function.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataProviderFactory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/mit/lab/init/DataProviderFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="TestNG Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>parking-fee</find>
+      <find>swapping</find>
+      <find>SNo</find>
+      <find>arr</find>
+      <find>contents,</find>
+      <find>&quot;function&quot;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>sno</replace>
+      <replace>A</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\Workbench\Workspace\Developer\GitHub\projects\blueprint</dir>
+    </dirStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test/com/mit/lab/norm/SolutionTest.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/ParkFee.java" />
+        <option value="$PROJECT_DIR$/test/com/mit/lab/unit/SolutionTest.java" />
+        <option value="$PROJECT_DIR$/test/com/mit/lab/unit/ParkFeeTest.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/Solution.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/Swapping.java" />
+        <option value="$PROJECT_DIR$/test/com/mit/lab/unit/SwappingTest.java" />
+        <option value="$PROJECT_DIR$/test/com/mit/lab/norm/SeatsAllocationTest.java" />
+        <option value="$PROJECT_DIR$/test/com/mit/lab/unit/EquiPairTest.java" />
+        <option value="$PROJECT_DIR$/test/com/mit/lab/unit/DynamicPairTest.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/EquiPair.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/DynamicPair.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/DynamicSlice.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/Collections.java" />
+        <option value="$PROJECT_DIR$/test/com/mit/lab/unit/DivisionTest.java" />
+        <option value="$APPLICATION_PLUGINS_DIR$/clover-idea-4.2.0.jar!/com/atlassian/clover/recorder/FixedSizeCoverageRecorder.class" />
+        <option value="$PROJECT_DIR$/test/com/mit/lab/unit/SeatsAllocationTest.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/SeatsAllocation.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/Album.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/Artist.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/BizRule.java" />
+        <option value="$PROJECT_DIR$/test/com/mit/lab/unit/BizRuleTest.java" />
+        <option value="$PROJECT_DIR$/test/com/mit/lab/unit/CollectionsTest.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/Script.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/meta/Items.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/Division.java" />
+        <option value="$PROJECT_DIR$/test/com/mit/lab/unit/ScriptTest.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/Word.java" />
+        <option value="$PROJECT_DIR$/test/com/mit/lab/unit/WordTest.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/intf/IPayable.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/CreditCard.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/Payment.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/Purchase.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/meta/Purchase.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/meta/CreditCard.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/meta/Payment.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/meta/Donut.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/DonutShop.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/util/List.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/util/Composition.java" />
+        <option value="$PROJECT_DIR$/config/testng-customized.xml" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/meta/Tuple.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/norm/Generic.java" />
+        <option value="$PROJECT_DIR$/src/com/mit/lab/intf/Function.java" />
+        <option value="$PROJECT_DIR$/test/com/mit/lab/init/DataProviderFactory.java" />
+        <option value="$PROJECT_DIR$/test/com/mit/lab/unit/FunctionTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1750" />
+    <option name="y" value="-11" />
+    <option name="width" value="1634" />
+    <option name="height" value="1066" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Internationalization</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Lint</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Performance</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Security</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
+          </State>
+          <State>
+            <id>Android Lint for Kotlin</id>
+          </State>
+          <State>
+            <id>Ant inspections</id>
+          </State>
+          <State>
+            <id>Application Server Specific Inspections</id>
+          </State>
+          <State>
+            <id>ArquillianJava</id>
+          </State>
+          <State>
+            <id>CDI(Contexts and Dependency Injection) issues</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Error handlingJava</id>
+          </State>
+          <State>
+            <id>Faces Model</id>
+          </State>
+          <State>
+            <id>FlexUnit inspections</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralScala</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>Hibernate Issues</id>
+          </State>
+          <State>
+            <id>Inheritance issuesJava</id>
+          </State>
+          <State>
+            <id>JPA issues</id>
+          </State>
+          <State>
+            <id>JSF annotated elements errors</id>
+          </State>
+          <State>
+            <id>JSP Inspections</id>
+          </State>
+          <State>
+            <id>JUnit issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java EE issues</id>
+          </State>
+          <State>
+            <id>Java language level issuesJava</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Method metricsJava</id>
+          </State>
+          <State>
+            <id>Performance issuesJava</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>RESTful Web Service</id>
+          </State>
+          <State>
+            <id>Scala</id>
+          </State>
+          <State>
+            <id>Security issuesJava</id>
+          </State>
+          <State>
+            <id>Serialization issuesJava</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>Struts</id>
+          </State>
+          <State>
+            <id>Struts 1Struts</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>Thymeleaf</id>
+          </State>
+          <State>
+            <id>Web Services</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Blueprint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blueprint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blueprint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blueprint" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blueprint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blueprint" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="bbb3b172:PsiDirectoryNodeWrapper" />
+            </path>
+            <path>
+              <item name="Blueprint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blueprint" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="bbb3b172:PsiDirectoryNodeWrapper" />
+              <item name="unit" type="bbb3b172:PsiDirectoryNodeWrapper" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../analysis/analysis.iml" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3632184" />
+    <property name="nodejs_interpreter_path" value="F:/Libarary/NodeJS/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="F:\Libarary\NodeJS\node.exe" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/test/com/mit/lab/unit" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.mit.lab.unit" />
+      <recent name="com.mit.lab.norm" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Blueprint" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="Radar" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/config/testng-customized.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Clover Optimizing Runner IDEA 13+">
+        <option name="discardSnapshots" value="false" />
+        <option name="compilesBeforeStaleSnapshot" value="10" />
+        <option name="minimize" value="true" />
+        <option name="reorder" value="FAILFAST" />
+      </RunnerSettings>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6165ef0f-1f17-4125-b58c-3bafaed610ed" name="Default" comment="" />
+      <created>1493193081874</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1493193081874</updated>
+      <workItem from="1493193105647" duration="8311000" />
+      <workItem from="1493254644797" duration="3576000" />
+      <workItem from="1493258531527" duration="53000" />
+      <workItem from="1493258819851" duration="1226000" />
+      <workItem from="1493260077671" duration="921000" />
+      <workItem from="1493261106345" duration="706000" />
+      <workItem from="1493261849418" duration="203000" />
+      <workItem from="1493262089407" duration="4205000" />
+      <workItem from="1493269972086" duration="549000" />
+      <workItem from="1493270620486" duration="58000" />
+      <workItem from="1493270732262" duration="183000" />
+      <workItem from="1493270953846" duration="16000" />
+      <workItem from="1493270998350" duration="7000" />
+      <workItem from="1493271190075" duration="96000" />
+      <workItem from="1493271402560" duration="419000" />
+      <workItem from="1493271845750" duration="2618000" />
+      <workItem from="1493275271780" duration="79000" />
+      <workItem from="1493275376924" duration="416000" />
+      <workItem from="1493275816157" duration="200000" />
+      <workItem from="1493276041391" duration="281000" />
+      <workItem from="1493276324060" duration="1863000" />
+      <workItem from="1493279195117" duration="131000" />
+      <workItem from="1493287449415" duration="200000" />
+      <workItem from="1493340619035" duration="3034000" />
+      <workItem from="1493367771050" duration="1284000" />
+      <workItem from="1493711374393" duration="2494000" />
+      <workItem from="1493716166217" duration="1251000" />
+      <workItem from="1493779685097" duration="4074000" />
+      <workItem from="1493796588956" duration="8648000" />
+      <workItem from="1493864313958" duration="1010000" />
+      <workItem from="1493966365858" duration="138000" />
+      <workItem from="1493966707022" duration="47000" />
+      <workItem from="1493967102374" duration="375000" />
+      <workItem from="1493972398855" duration="997000" />
+      <workItem from="1494210029117" duration="368000" />
+      <workItem from="1494210423692" duration="170000" />
+      <workItem from="1494210618848" duration="1405000" />
+      <workItem from="1494213367904" duration="35000" />
+      <workItem from="1494213427147" duration="54000" />
+      <workItem from="1494214748768" duration="2972000" />
+      <workItem from="1494222099881" duration="130000" />
+      <workItem from="1494224048975" duration="1727000" />
+      <workItem from="1494225837804" duration="458000" />
+      <workItem from="1494226323994" duration="226000" />
+      <workItem from="1494226578395" duration="25000" />
+      <workItem from="1494226682621" duration="49000" />
+      <workItem from="1494226762090" duration="5960000" />
+      <workItem from="1494234312745" duration="3010000" />
+      <workItem from="1494296827337" duration="162000" />
+      <workItem from="1494297109403" duration="98000" />
+      <workItem from="1494297264555" duration="1266000" />
+      <workItem from="1494311668292" duration="2054000" />
+      <workItem from="1494321082741" duration="774000" />
+      <workItem from="1494379411883" duration="3659000" />
+      <workItem from="1494398940828" duration="270000" />
+      <workItem from="1494464723324" duration="57000" />
+      <workItem from="1494475301409" duration="2708000" />
+      <workItem from="1494581102329" duration="1279000" />
+      <workItem from="1494812379641" duration="110000" />
+      <workItem from="1494812669203" duration="999000" />
+      <workItem from="1495098340410" duration="77000" />
+      <workItem from="1495098451693" duration="1521000" />
+      <workItem from="1495418480905" duration="644000" />
+      <workItem from="1495442884957" duration="57000" />
+      <workItem from="1495443109866" duration="4395000" />
+      <workItem from="1495502116753" duration="6933000" />
+      <workItem from="1495521707340" duration="823000" />
+      <workItem from="1495589026957" duration="2205000" />
+      <workItem from="1495762811691" duration="81000" />
+      <workItem from="1495763078113" duration="1633000" />
+      <workItem from="1495764776473" duration="3722000" />
+      <workItem from="1495847575621" duration="647000" />
+      <workItem from="1495855224558" duration="1049000" />
+      <workItem from="1497259954776" duration="975000" />
+      <workItem from="1497593654378" duration="204000" />
+      <workItem from="1497594038508" duration="493000" />
+      <workItem from="1497594585051" duration="25000" />
+      <workItem from="1497594714920" duration="26000" />
+      <workItem from="1497594875023" duration="126000" />
+      <workItem from="1499752387161" duration="78000" />
+      <workItem from="1499752552474" duration="25000" />
+      <workItem from="1499752599920" duration="256000" />
+      <workItem from="1499752876756" duration="1097000" />
+      <workItem from="1499755922907" duration="24000" />
+      <workItem from="1499755977155" duration="152000" />
+      <workItem from="1501218631828" duration="101000" />
+      <workItem from="1501218969237" duration="5245000" />
+      <workItem from="1506507822387" duration="280000" />
+      <workItem from="1506508136221" duration="34000" />
+      <workItem from="1507982037436" duration="1501000" />
+      <workItem from="1510284673201" duration="83000" />
+      <workItem from="1510284790401" duration="1643000" />
+      <workItem from="1511592480099" duration="1563000" />
+      <workItem from="1511597264322" duration="2092000" />
+      <workItem from="1511601056223" duration="505000" />
+      <workItem from="1511602034484" duration="1328000" />
+      <workItem from="1511837376968" duration="57000" />
+      <workItem from="1511837486487" duration="720000" />
+      <workItem from="1511838732745" duration="9402000" />
+      <workItem from="1512008232602" duration="81000" />
+      <workItem from="1512008537478" duration="7614000" />
+      <workItem from="1512093308898" duration="1218000" />
+      <workItem from="1512177181919" duration="4142000" />
+      <workItem from="1512202389238" duration="3586000" />
+      <workItem from="1512352248381" duration="1527000" />
+      <workItem from="1512370427091" duration="6510000" />
+      <workItem from="1512438813633" duration="4289000" />
+      <workItem from="1512627875942" duration="2841000" />
+      <workItem from="1512640403193" duration="640000" />
+      <workItem from="1512698422424" duration="493000" />
+      <workItem from="1512699107790" duration="15739000" />
+      <workItem from="1512783692251" duration="3044000" />
+      <workItem from="1512808231521" duration="261000" />
+      <workItem from="1512808520654" duration="124000" />
+      <workItem from="1512808666910" duration="1705000" />
+      <workItem from="1512956956249" duration="36000" />
+      <workItem from="1512957316504" duration="73000" />
+      <workItem from="1512957413298" duration="29000" />
+      <workItem from="1512957468502" duration="27000" />
+      <workItem from="1512957610839" duration="912000" />
+      <workItem from="1512958643786" duration="9772000" />
+      <workItem from="1513043857054" duration="8091000" />
+      <workItem from="1513217635707" duration="710000" />
+      <workItem from="1513232283390" duration="48000" />
+      <workItem from="1513303032476" duration="873000" />
+      <workItem from="1513304094545" duration="1049000" />
+      <workItem from="1513390924520" duration="1909000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Radar - 2017.12.08 at 16h 38m 42s.xml">
+      <configuration name="Radar" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Radar - 2017.12.08 at 16h 42m 43s.xml">
+      <configuration name="Radar" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Radar - 2017.12.08 at 16h 43m 39s.xml">
+      <configuration name="Radar" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Radar - 2017.12.08 at 17h 10m 34s.xml">
+      <configuration name="Radar" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Radar - 2017.12.09 at 16h 38m 40s.xml">
+      <configuration name="Radar" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Radar - 2017.12.09 at 17h 05m 36s.xml">
+      <configuration name="Radar" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Radar - 2017.12.11 at 13h 06m 23s.xml">
+      <configuration name="Radar" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Radar - 2017.12.12 at 11h 43m 02s.xml">
+      <configuration name="Radar" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Radar - 2017.12.12 at 11h 56m 19s.xml">
+      <configuration name="Radar" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SeatsAllocationTest - 2017.05.08 at 10h 21m 52s.xml">
+      <configuration name="SeatsAllocationTest" configurationId="TestNG" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="208912000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1734" y="-8" width="1874" height="1096" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cargo" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Test Runs" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30060673" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34375" sideWeight="0.5085494" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="ASM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24968234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34375" sideWeight="0.49145064" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cloverage" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35907337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Tasks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3172043" sideWeight="0.4974587" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30998346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32708332" sideWeight="0.49338478" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268817" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/mit/lab/norm/ParkFee.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/mit/lab/norm/ParkFee.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/mit/lab/norm/Swapping.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/com/mit/lab/unit/CollectionsTest.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/com/mit/lab/unit/SeatsAllocationTest.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/mit/lab/norm/SeatsAllocation.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/mit/lab/norm/Division.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/mit/lab/norm/Division.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/com/mit/lab/unit/DivisionTest.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/mit/lab/norm/SeatsAllocation.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/mit/lab/norm/Script.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/com/mit/lab/unit/ScriptTest.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/mit/lab/meta/Items.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/mit/lab/meta/Items.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/com/mit/lab/unit/FunctionTest.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="24" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="entry.getValue();" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="atlassian-ide-plugin-workspace-issues">
+    <option name="filtersMap">
+      <map>
+        <entry>
+          <key>
+            <ServerIdImpl>
+              <option name="id" value="e74fcee0-b4ca-4f6d-bb8a-f3b447b0f97a" />
+            </ServerIdImpl>
+          </key>
+          <value>
+            <JiraCustomFilterMap />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="view">
+      <JiraViewConfigurationBean>
+        <option name="viewFilterId" value="" />
+      </JiraViewConfigurationBean>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://F:/Oracle/Java/x64/JDK/jdk1.8.0_131/src.zip!/java/util/stream/Collectors.java" />
+    <entry file="jar://F:/Oracle/Java/x64/JDK/jdk1.8.0_131/src.zip!/javax/script/SimpleScriptContext.java" />
+    <entry file="jar://F:/Oracle/Java/x64/JDK/jdk1.8.0_131/src.zip!/javax/script/ScriptContext.java" />
+    <entry file="jar://$PROJECT_DIR$/lib/testng-6.11-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/norm/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eam.txt" />
+    <entry file="file://$PROJECT_DIR$/peekaboo.txt" />
+    <entry file="file://$PROJECT_DIR$/test/com/mit/lab/unit/CollectionsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/mit/lab/unit/DivisionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Oracle/Java/x64/JDK/jdk1.8.0_131/src.zip!/java/lang/invoke/LambdaForm.java" />
+    <entry file="jar://F:/Oracle/Java/x64/JDK/jdk1.8.0_131/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/runtime/ScriptFunctionData.class" />
+    <entry file="jar://F:/Oracle/Java/x64/JDK/jdk1.8.0_131/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/runtime/ScriptFunction.class" />
+    <entry file="jar://F:/Oracle/Java/x64/JDK/jdk1.8.0_131/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/runtime/ScriptRuntime.class" />
+    <entry file="jar://F:/Oracle/Java/x64/JDK/jdk1.8.0_131/jre/lib/ext/nashorn.jar!/jdk/nashorn/api/scripting/NashornScriptEngine.class" />
+    <entry file="file://$PROJECT_DIR$/test/com/mit/lab/unit/SeatsAllocationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/norm/Swapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/norm/SeatsAllocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <marker date="1494480584042" expanded="true" signature="1935:1941" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/norm/Holder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/norm/ParkFee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="40" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/norm/Division.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Oracle/Java/x64/JDK/jdk1.8.0_131/src.zip!/java/lang/String.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/norm/Script.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/mit/lab/unit/ScriptTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../analysis/analysis.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/meta/Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/mit/lab/unit/GenericTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/testng-6.11-sources.jar!/org/testng/internal/reflect/DataProviderMethodMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/norm/DatePlain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/intf/IPayable.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/meta/Purchase.java" />
+    <entry file="jar://J:/Developer/Oracle/Java/SE/jdk1.8.0_152/jre/lib/rt.jar!/java/util/Collections.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11781">
+          <caret line="758" column="0" lean-forward="false" selection-start-line="758" selection-start-column="0" selection-end-line="758" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/meta/Payment.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/norm/Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/norm/DonutShop.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/meta/Donut.java" />
+    <entry file="jar://$CLOVER_RUNTIME$!/com/atlassian/clover/recorder/FixedSizeCoverageRecorder.class" />
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/util/List.java" />
+    <entry file="jar://J:/Developer/Oracle/Java/SE/jdk1.8.0_152/jre/lib/rt.jar!/java/util/function/Function.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/meta/CreditCard.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/util/Composition.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/meta/Tuple.java" />
+    <entry file="jar://J:/Developer/Oracle/Java/SE/jdk1.8.0_152/jre/lib/rt.jar!/javax/xml/transform/Result.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/norm/BizRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/testng-customized.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://J:/Developer/Libarary/TestNG/testng-6.13.1-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/mit/lab/unit/WordTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/norm/Generic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/mit/lab/unit/BizRuleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/mit/lab/unit/FunctionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mit/lab/intf/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/mit/lab/init/DataProviderFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3632184" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Detection</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3632184" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Clover IDEA Plugin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3632184" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3632184" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Blueprint</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3632184" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>TestNG</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3632184" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
