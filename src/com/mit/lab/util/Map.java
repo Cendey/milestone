@@ -15,7 +15,8 @@ import com.mit.lab.meta.Tuple;
  * @version 1.0
  * @date 12/16/2017
  */
-public class Map<K,V> {
+public class Map<K, V> {
+
     protected final Tree<MapEntry<Integer, List<Tuple<K, V>>>> delegate;
 
     private Map() {
@@ -28,7 +29,9 @@ public class Map<K,V> {
 
     public Map<K, V> add(K key, V value) {
         Tuple<K, V> tuple = new Tuple<>(key, value);
-        List<Tuple<K, V>> ltkv = getAll(key).map(lt -> lt.foldLeft(List.list(tuple), l -> t -> t._1.equals(key) ? l : l.cons(t))).getOrElse(() -> List.list(tuple));
+        List<Tuple<K, V>> ltkv =
+            getAll(key).map(lt -> lt.foldLeft(List.list(tuple), l -> t -> t._1.equals(key) ? l : l.cons(t)))
+                .getOrElse(() -> List.list(tuple));
         return new Map<>(delegate.insert(MapEntry.mapEntry(key.hashCode(), ltkv)));
     }
 
@@ -37,7 +40,9 @@ public class Map<K,V> {
     }
 
     public Map<K, V> remove(K key) {
-        List<Tuple<K, V>> ltkv = getAll(key).map(lt -> lt.foldLeft(List.<Tuple<K, V>>list(), l -> t -> t._1.equals(key) ? l : l.cons(t))).getOrElse(List::list);
+        List<Tuple<K, V>> ltkv =
+            getAll(key).map(lt -> lt.foldLeft(List.<Tuple<K, V>>list(), l -> t -> t._1.equals(key) ? l : l.cons(t)))
+                .getOrElse(List::list);
         return ltkv.isEmpty()
             ? new Map<>(delegate.delete(MapEntry.mapEntry(key.hashCode())))
             : new Map<>(delegate.insert(MapEntry.mapEntry(key.hashCode(), ltkv)));

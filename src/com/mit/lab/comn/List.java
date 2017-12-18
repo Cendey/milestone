@@ -8,11 +8,9 @@ import com.mit.lab.meta.Tuple3;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.function.Consumer;
-
 
 import static com.mit.lab.comn.TailCall.ret;
 import static com.mit.lab.comn.TailCall.sus;
@@ -174,41 +172,6 @@ public abstract class List<A> {
     }
 
     public Result<A> getAt__(int index) {
-        class Tuple<T, U> {
-
-            public final T _1;
-            public final U _2;
-
-            public Tuple(T t, U u) {
-                this._1 = Objects.requireNonNull(t);
-                this._2 = Objects.requireNonNull(u);
-            }
-
-            @Override
-            public String toString() {
-                return String.format("(%s,%s)", _1, _2);
-            }
-
-            @Override
-            public boolean equals(Object o) {
-                if (!(o.getClass() == this.getClass()))
-                    return false;
-                else {
-                    @SuppressWarnings("rawtypes")
-                    Tuple that = (Tuple) o;
-                    return _2.equals(that._2);
-                }
-            }
-
-            @Override
-            public int hashCode() {
-                final int prime = 31;
-                int result = 1;
-                result = prime * result + _1.hashCode();
-                result = prime * result + _2.hashCode();
-                return result;
-            }
-        }
         Tuple<Result<A>, Integer> zero = new Tuple<>(Result.failure("Index out of bound"), -1);
         Tuple<Result<A>, Integer> identity = new Tuple<>(Result.failure("Index out of bound"), index);
         Tuple<Result<A>, Integer> rt = index < 0 || index >= length()
@@ -241,44 +204,6 @@ public abstract class List<A> {
     }
 
     public Tuple<List<A>, List<A>> splitAt__(int index) {
-        class Tuple3<T, U, V> {
-
-            public final T _1;
-            public final U _2;
-            public final V _3;
-
-            public Tuple3(T t, U u, V v) {
-                this._1 = Objects.requireNonNull(t);
-                this._2 = Objects.requireNonNull(u);
-                this._3 = Objects.requireNonNull(v);
-            }
-
-            @Override
-            public String toString() {
-                return String.format("(%s,%s,%s)", _1, _2, _3);
-            }
-
-            @Override
-            public boolean equals(Object o) {
-                if (!(o.getClass() == this.getClass()))
-                    return false;
-                else {
-                    @SuppressWarnings("rawtypes")
-                    Tuple3 that = (Tuple3) o;
-                    return _3.equals(that._3);
-                }
-            }
-
-            @Override
-            public int hashCode() {
-                final int prime = 31;
-                int result = 1;
-                result = prime * result + _1.hashCode();
-                result = prime * result + _2.hashCode();
-                result = prime * result + _3.hashCode();
-                return result;
-            }
-        }
         Tuple3<List<A>, List<A>, Integer> zero = new Tuple3<>(list(), list(), 0);
         Tuple3<List<A>, List<A>, Integer> identity = new Tuple3<>(list(), list(), index);
 
