@@ -22,7 +22,7 @@ public class Validation {
     private static Function<String, Result<String>> emailChecker = s ->
         s == null ? new Result.Failure<>("email must not be null") :
             s.length() == 0 ? new Result.Failure<>("email must not be empty") :
-                emailPattern.matcher(s).matches() ? new Result.Success<>("email") :
+                emailPattern.matcher(s).matches() ? new Result.Success<>(s) :
                     new Result.Failure<>(String.format("email %s is invalid.", s));
 
     private static void logError(String error) {
@@ -35,7 +35,7 @@ public class Validation {
 
     public static Executable validate(String email) {
         Result<String> result = emailChecker.apply(email);
-        return (result instanceof Result.Success) ? () -> sendVerificationMail(email) :
+        return (result instanceof Result.Success) ? () -> sendVerificationMail(result.getMessage()) :
             () -> logError(result.getMessage());
     }
 }
