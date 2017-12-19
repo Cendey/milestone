@@ -49,6 +49,8 @@ public abstract class Result<T> implements Serializable {
 
     public abstract Exception failureValue();
 
+    public abstract String getMessage();
+
     public abstract void forEach(Effect<T> c);
 
     public abstract void forEachOrThrow(Effect<T> c);
@@ -118,11 +120,11 @@ public abstract class Result<T> implements Serializable {
         return result.flatMap(x -> x);
     }
 
-    private static class Failure<T> extends Empty<T> {
+    public static class Failure<T> extends Empty<T> {
 
         private final RuntimeException exception;
 
-        private Failure(String message) {
+        public Failure(String message) {
             super();
             this.exception = new IllegalStateException(message);
         }
@@ -160,6 +162,11 @@ public abstract class Result<T> implements Serializable {
         @Override
         public RuntimeException failureValue() {
             return this.exception;
+        }
+
+        @Override
+        public String getMessage() {
+            return exception.getMessage();
         }
 
         @Override
@@ -290,6 +297,11 @@ public abstract class Result<T> implements Serializable {
         }
 
         @Override
+        public String getMessage() {
+            return null;
+        }
+
+        @Override
         public void forEach(Effect<T> c) {
             /* Empty. Do nothing. */
         }
@@ -389,7 +401,7 @@ public abstract class Result<T> implements Serializable {
         }
     }
 
-    private static class Success<T> extends Result<T> {
+    public static class Success<T> extends Result<T> {
 
         private final T value;
 
@@ -431,6 +443,11 @@ public abstract class Result<T> implements Serializable {
         @Override
         public RuntimeException failureValue() {
             throw new IllegalStateException("Method failureValue() called on a Success instance");
+        }
+
+        @Override
+        public String getMessage() {
+            return String.valueOf(value);
         }
 
         @Override

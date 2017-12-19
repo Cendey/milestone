@@ -225,4 +225,14 @@ public class DataProviderFactory {
             new Object[]{addTax1stPrice, realPrice, realRate}
         };
     }
+
+    @DataProvider(name = "validation-factory")
+    public static Object[][] generateValidation() {
+        return new Object[][]{
+            new Object[]{"this.is@my.email"},
+            new Object[]{null},
+            new Object[]{""},
+            new Object[]{"john.doe@acme.com"}
+        };
+    }
 }

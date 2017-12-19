@@ -5,6 +5,7 @@ import com.mit.lab.intf.Supplier;
 import com.mit.lab.meta.Tuple;
 import com.mit.lab.meta.Tuple3;
 
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -888,7 +889,7 @@ public abstract class List<A> {
     }
 
     public static List<String> words(String s) {
-        byte[] bytes = s.getBytes();
+        byte[] bytes = s.getBytes(Charset.forName("utf-8"));
         StringBuffer sb = new StringBuffer();
         java.util.List<String> result = new ArrayList<>();
         for (byte aByte : bytes) {
