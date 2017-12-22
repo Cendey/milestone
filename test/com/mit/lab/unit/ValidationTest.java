@@ -37,7 +37,7 @@ public class ValidationTest {
 
     @Test(dataProvider = "validation-factory", dataProviderClass = DataProviderFactory.class, groups = {"validation"})
     public void testValidate(String emailAddress) {
-        Validation.validate(emailAddress).exec();
+        Validation.validate(emailAddress);
     }
 
     @Parameters({"close-info"})

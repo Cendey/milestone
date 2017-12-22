@@ -22,6 +22,7 @@ import static com.mit.lab.intf.IO.unit;
  * @version 1.0
  * @date 12/16/2017
  */
+@SuppressWarnings(value = {"unused"})
 public abstract class Result<T> implements Serializable {
 
     private Result() {
@@ -34,6 +35,8 @@ public abstract class Result<T> implements Serializable {
     public abstract Boolean isSuccess();
 
     public abstract Boolean isFailure();
+
+    public abstract void bind(Effect<T> success, Effect<String> failure);
 
     public abstract Boolean isEmpty();
 
@@ -85,14 +88,14 @@ public abstract class Result<T> implements Serializable {
         return map(x -> this).getOrElse(defaultValue);
     }
 
-    public static <A> IO<Result<A>> foldLIO(Result<IO<A>> r) {
-        IO<Result<A>> z = () -> Result.empty();
+    static <A> IO<Result<A>> foldLIO(Result<IO<A>> r) {
+        IO<Result<A>> z = Result::empty;
         Function<IO<Result<A>>, Function<IO<A>, IO<Result<A>>>> f =
             iors -> ios -> iors.flatMap(rs -> ios.flatMap(s -> unit(Result.of(s))));
         return r.foldLeft(z, f);
     }
 
-    public static <T, U> Result<T> failure(Failure<U> failure) {
+    static <T, U> Result<T> failure(Failure<U> failure) {
         return new Failure<>(failure.exception);
     }
 
@@ -122,11 +125,14 @@ public abstract class Result<T> implements Serializable {
 
     public static class Failure<T> extends Empty<T> {
 
+        private String message;
         private final RuntimeException exception;
+
 
         public Failure(String message) {
             super();
-            this.exception = new IllegalStateException(message);
+            this.message = message;
+            this.exception = new IllegalStateException(String.valueOf(message));
         }
 
         private Failure(RuntimeException e) {
@@ -162,6 +168,11 @@ public abstract class Result<T> implements Serializable {
         @Override
         public RuntimeException failureValue() {
             return this.exception;
+        }
+
+        @Override
+        public void bind(Effect<T> success, Effect<String> failure) {
+            failure.apply(message);
         }
 
         @Override
@@ -257,7 +268,7 @@ public abstract class Result<T> implements Serializable {
 
     private static class Empty<T> extends Result<T> {
 
-        public Empty() {
+        Empty() {
             super();
         }
 
@@ -297,6 +308,11 @@ public abstract class Result<T> implements Serializable {
         }
 
         @Override
+        public void bind(Effect<T> success, Effect<String> failure) {
+            /* Empty. Do nothing. */
+        }
+
+        @Override
         public String getMessage() {
             return null;
         }
@@ -308,7 +324,7 @@ public abstract class Result<T> implements Serializable {
 
         @Override
         public void forEachOrThrow(Effect<T> c) {
-            /* Do nothing */
+            /* Empty. Do nothing. */
         }
 
         @Override
@@ -443,6 +459,11 @@ public abstract class Result<T> implements Serializable {
         @Override
         public RuntimeException failureValue() {
             throw new IllegalStateException("Method failureValue() called on a Success instance");
+        }
+
+        @Override
+        public void bind(Effect<T> success, Effect<String> failure) {
+            success.apply(value);
         }
 
         @Override
@@ -583,10 +604,7 @@ public abstract class Result<T> implements Serializable {
         }
     }
 
-    public static <T> Result<T> of(
-        final Function<T, Boolean> predicate,
-        final T value,
-        final String message) {
+    public static <T> Result<T> of(final Function<T, Boolean> predicate, final T value, final String message) {
         try {
             return predicate.apply(value)
                 ? Result.success(value)
@@ -614,7 +632,7 @@ public abstract class Result<T> implements Serializable {
         return x -> x.map(f);
     }
 
-    public static <A, B, C> Function<Result<A>, Function<Result<B>, Result<C>>> lift2(
+    private static <A, B, C> Function<Result<A>, Function<Result<B>, Result<C>>> lift2(
         final Function<A, Function<B, C>> f) {
         return a -> b -> a.map(f).flatMap(b::map);
     }
@@ -624,24 +642,16 @@ public abstract class Result<T> implements Serializable {
         return a -> b -> c -> a.map(f).flatMap(b::map).flatMap(c::map);
     }
 
-    @SuppressWarnings("unchecked")
-    public static <A, B, C> Result<C> map2_(
-        final Result<A> a,
-        final Result<B> b,
-        final Function<A, Function<B, C>> f) {
-        return a.isSuccess()
-            ? b.isSuccess()
-            ? Result.of(() -> f.apply(a.successValue()).apply(b.successValue()))
-            : Result.failure((Failure<C>) b)
-            : b.isSuccess()
-            ? Result.failure((Failure<C>) a)
-            : Result.failure(String.format("%s, %s", a.failureValue(), b.failureValue()));
+    public static <A, B, C> Result<C> mapTo(Result<A> a, Result<B> b, Function<A, Function<B, C>> f) {
+        return a.isSuccess() ?
+            b.isSuccess() ? Result.of(() -> f.apply(a.successValue()).apply(b.successValue())) :
+                Result.failure((Failure<C>) b)
+            :
+            b.isSuccess() ? Result.failure((Failure<C>) a) :
+                Result.failure(String.format("%s, %s", a.failureValue(), b.failureValue()));
     }
 
-    public static <A, B, C> Result<C> map2(
-        final Result<A> a,
-        final Result<B> b,
-        final Function<A, Function<B, C>> f) {
+    public static <A, B, C> Result<C> map2(Result<A> a, Result<B> b, Function<A, Function<B, C>> f) {
         return lift2(f).apply(a).apply(b);
     }
 
@@ -650,9 +660,9 @@ public abstract class Result<T> implements Serializable {
         return unfold(new Tuple<>(ra, ra), f).eval()._2;
     }
 
-    public static <A> TailCall<Tuple<Result<A>, Result<A>>> unfold(
+    private static <A> TailCall<Tuple<Result<A>, Result<A>>> unfold(
         Tuple<Result<A>, Result<A>> a, Function<A, Result<A>> f) {
-        Result<A> x = a._2.flatMap(f::apply);
+        Result<A> x = a._2.flatMap(f);
         return x.isSuccess()
             ? TailCall.sus(() -> unfold(new Tuple<>(a._2, x), f))
             : TailCall.ret(a);

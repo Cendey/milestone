@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class ScriptTest {
     @Test(dataProvider = "script-factory", dataProviderClass = DataProviderFactory.class, groups = {"script"})
-    public void testEvaluate(Items params, String expression) throws Exception {
+    public void testEvaluate(Items params, String expression) {
         Script.getInstance().evaluate(params, expression);
         System.out.println(String.format(params + " --> " + expression + "? %s", params.isResult() ? "√" : "×"));
     }

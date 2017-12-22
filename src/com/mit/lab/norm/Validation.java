@@ -1,7 +1,7 @@
 package com.mit.lab.norm;
 
 import com.mit.lab.comn.Result;
-import com.mit.lab.intf.Executable;
+import com.mit.lab.intf.Effect;
 import com.mit.lab.intf.Function;
 
 import java.util.regex.Pattern;
@@ -19,23 +19,17 @@ import java.util.regex.Pattern;
 public class Validation {
 
     private static Pattern emailPattern = Pattern.compile("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$");
-    private static Function<String, Result<String>> emailChecker = s ->
-        s == null ? new Result.Failure<>("email must not be null") :
-            s.length() == 0 ? new Result.Failure<>("email must not be empty") :
-                emailPattern.matcher(s).matches() ? new Result.Success<>(s) :
-                    new Result.Failure<>(String.format("email %s is invalid.", s));
+    private static Function<String, Result<String>> emailChecker = emailAddress ->
+        emailAddress == null ? new Result.Failure<>("email must not be null") :
+            emailAddress.length() == 0 ? new Result.Failure<>("email must not be empty") :
+                emailPattern.matcher(emailAddress).matches() ? new Result.Success<>(emailAddress) :
+                    new Result.Failure<>(String.format("email %s is invalid.", emailAddress));
 
-    private static void logError(String error) {
-        System.out.println(String.format("Error message logged: %s", error));
-    }
+    private static Effect<String> success = s -> System.out.println(String.format("Mail sent to %s", s));
 
-    private static void sendVerificationMail(String message) {
-        System.out.println(String.format("Mail sent to %s", message));
-    }
+    private static Effect<String> failure = s -> System.out.println(String.format("Error message logged: %s", s));
 
-    public static Executable validate(String email) {
-        Result<String> result = emailChecker.apply(email);
-        return (result instanceof Result.Success) ? () -> sendVerificationMail(result.getMessage()) :
-            () -> logError(result.getMessage());
+    public static void validate(String email) {
+        emailChecker.apply(email).bind(success, failure);
     }
 }
