@@ -1,10 +1,10 @@
-package com.mit.lab.comn;
+package com.mit.lab.coms;
 
 import com.mit.lab.intf.Function;
 
 /**
  * <p>Title: Blueprint</p>
- * <p>Description: com.mit.lab.comn.Tree</p>
+ * <p>Description: com.mit.lab.coms.Tree</p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: Kewill Co., Ltd</p>
  *

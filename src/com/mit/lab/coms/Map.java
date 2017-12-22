@@ -1,4 +1,4 @@
-package com.mit.lab.comn;
+package com.mit.lab.coms;
 
 import com.mit.lab.meta.Tuple;
 
@@ -9,7 +9,7 @@ import java.util.function.Consumer;
 
 /**
  * <p>Title: Blueprint</p>
- * <p>Description: com.mit.lab.comn.Map</p>
+ * <p>Description: com.mit.lab.coms.Map</p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: Kewill Co., Ltd</p>
  *

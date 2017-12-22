@@ -1,6 +1,6 @@
 package com.mit.lab.util;
 
-import com.mit.lab.comn.Result;
+import com.mit.lab.coms.Result;
 import com.mit.lab.intf.IO;
 import com.mit.lab.meta.Nothing;
 

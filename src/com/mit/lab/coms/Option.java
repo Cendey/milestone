@@ -1,4 +1,4 @@
-package com.mit.lab.comn;
+package com.mit.lab.coms;
 
 import com.mit.lab.intf.Function;
 import com.mit.lab.intf.Supplier;
@@ -7,7 +7,7 @@ import java.util.Objects;
 
 /**
  * <p>Title: Blueprint</p>
- * <p>Description: com.mit.lab.comn.Option</p>
+ * <p>Description: com.mit.lab.coms.Option</p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: Kewill Co., Ltd</p>
  *

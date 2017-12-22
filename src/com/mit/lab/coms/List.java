@@ -1,4 +1,4 @@
-package com.mit.lab.comn;
+package com.mit.lab.coms;
 
 import com.mit.lab.intf.Function;
 import com.mit.lab.intf.Supplier;
@@ -13,12 +13,12 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.function.Consumer;
 
-import static com.mit.lab.comn.TailCall.ret;
-import static com.mit.lab.comn.TailCall.sus;
+import static com.mit.lab.coms.TailCall.ret;
+import static com.mit.lab.coms.TailCall.sus;
 
 /**
  * <p>Title: MIT Lib Project</p>
- * <p>Description: com.mit.lab.comn.List</p>
+ * <p>Description: com.mit.lab.coms.List</p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: MIT Lab Co., LTD.</p>
  *

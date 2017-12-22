@@ -1,6 +1,6 @@
 package com.mit.lab.util;
 
-import com.mit.lab.comn.Result;
+import com.mit.lab.coms.Result;
 
 /**
  * <p>Title: Blueprint</p>

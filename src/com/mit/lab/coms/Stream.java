@@ -1,15 +1,15 @@
-package com.mit.lab.comn;
+package com.mit.lab.coms;
 
 import com.mit.lab.intf.Function;
 import com.mit.lab.intf.Supplier;
 import com.mit.lab.meta.Tuple;
 
-import static com.mit.lab.comn.TailCall.ret;
-import static com.mit.lab.comn.TailCall.sus;
+import static com.mit.lab.coms.TailCall.ret;
+import static com.mit.lab.coms.TailCall.sus;
 
 /**
  * <p>Title: Blueprint</p>
- * <p>Description: com.mit.lab.comn.Stream</p>
+ * <p>Description: com.mit.lab.coms.Stream</p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: Kewill Co., Ltd</p>
  *

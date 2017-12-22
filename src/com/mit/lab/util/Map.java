@@ -1,8 +1,8 @@
 package com.mit.lab.util;
 
-import com.mit.lab.comn.List;
-import com.mit.lab.comn.Result;
-import com.mit.lab.comn.Tree;
+import com.mit.lab.coms.List;
+import com.mit.lab.coms.Result;
+import com.mit.lab.coms.Tree;
 import com.mit.lab.meta.Tuple;
 
 /**

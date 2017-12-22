@@ -1,11 +1,11 @@
-package com.mit.lab.comn;
+package com.mit.lab.coms;
 
 import java.util.Comparator;
 import java.util.NoSuchElementException;
 
 /**
  * <p>Title: Blueprint</p>
- * <p>Description: com.mit.lab.comn.Heap</p>
+ * <p>Description: com.mit.lab.coms.Heap</p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: Kewill Co., Ltd</p>
  *

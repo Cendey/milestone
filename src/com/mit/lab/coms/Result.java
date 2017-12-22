@@ -1,4 +1,4 @@
-package com.mit.lab.comn;
+package com.mit.lab.coms;
 
 import com.mit.lab.intf.Effect;
 import com.mit.lab.intf.Function;
@@ -14,7 +14,7 @@ import static com.mit.lab.intf.IO.unit;
 
 /**
  * <p>Title: Blueprint</p>
- * <p>Description: com.mit.lab.comn.Result</p>
+ * <p>Description: com.mit.lab.coms.Result</p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: Kewill Co., Ltd</p>
  *

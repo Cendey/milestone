@@ -1,6 +1,6 @@
 package com.mit.lab.norm;
 
-import com.mit.lab.comn.Result;
+import com.mit.lab.coms.Result;
 import com.mit.lab.intf.Effect;
 import com.mit.lab.intf.Function;
 

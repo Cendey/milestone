@@ -1,7 +1,7 @@
 package com.mit.lab.intf;
 
-import com.mit.lab.comn.List;
-import com.mit.lab.comn.Stream;
+import com.mit.lab.coms.List;
+import com.mit.lab.coms.Stream;
 import com.mit.lab.meta.Nothing;
 
 /**
