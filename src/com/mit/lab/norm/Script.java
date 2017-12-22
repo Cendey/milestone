@@ -2,7 +2,13 @@ package com.mit.lab.norm;
 
 import com.mit.lab.meta.Items;
 
-import javax.script.*;
+import javax.script.Bindings;
+import javax.script.ScriptContext;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
+import javax.script.SimpleBindings;
+import javax.script.SimpleScriptContext;
 
 public class Script {
 
@@ -24,7 +30,7 @@ public class Script {
             bindings.put("item", params);
             context.setBindings(bindings, ScriptContext.ENGINE_SCOPE);
             try {
-                String complete = "var result=" + script + ";\nitem.setResult(result);";
+                String complete = String.format("item.setResult(%s);", script);
                 engine.eval(complete, context);
             } catch (ScriptException e) {
                 System.out.println(e.getCause().getMessage());
