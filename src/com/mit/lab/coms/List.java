@@ -26,6 +26,7 @@ import static com.mit.lab.coms.TailCall.sus;
  * @version 1.0
  * @since 11/30/2017
  */
+@SuppressWarnings(value = {"unused"})
 public abstract class List<A> {
 
     protected abstract A head();
@@ -100,7 +101,7 @@ public abstract class List<A> {
         return exists(x -> x.equals(a));
     }
 
-    public Result<List<Tuple<A, Integer>>> zipWithPositionResult() {
+    private Result<List<Tuple<A, Integer>>> zipWithPositionResult() {
         return zip(iterate(0, x -> x + 1, length()));
     }
 
@@ -108,7 +109,8 @@ public abstract class List<A> {
         return zipWithPositionResult().getOrElse(List.list());
     }
 
-    public static <B> List<B> iterate(B seed, Function<B, B> f, int n) {
+    @SuppressWarnings("SameParameterValue")
+    private static <B> List<B> iterate(B seed, Function<B, B> f, int n) {
         List<B> result = list();
         B temp = seed;
         for (int i = 0; i < n; i++) {
@@ -118,11 +120,11 @@ public abstract class List<A> {
         return result.reverse();
     }
 
-    public <B> Result<List<Tuple<A, B>>> zip(List<B> listB) {
+    private <B> Result<List<Tuple<A, B>>> zip(List<B> listB) {
         return zip(this, listB);
     }
 
-    public static <A, B> Result<List<Tuple<A, B>>> zip(List<A> listA, List<B> listB) {
+    private static <A, B> Result<List<Tuple<A, B>>> zip(List<A> listA, List<B> listB) {
         if (listA.length() != listB.length()) {
             return Result.failure("Can't zip lists of different lengths. Use zipAsPossible().");
         }
@@ -181,7 +183,7 @@ public abstract class List<A> {
         return rt._1;
     }
 
-    public Tuple<List<A>, List<A>> splitAt(int index) {
+    private Tuple<List<A>, List<A>> splitAt(int index) {
         return index < 0
             ? splitAt(0)
             : index > length()
@@ -246,7 +248,7 @@ public abstract class List<A> {
         return foldLeft(false, true, f)._1;
     }
 
-    public List<List<A>> splitListAt(int i) {
+    private List<List<A>> splitListAt(int i) {
         return splitListAt(list(), this.reverse(), i).eval();
     }
 
@@ -256,7 +258,7 @@ public abstract class List<A> {
             : sus(() -> splitListAt(acc.cons(list.head()), list.tail(), i - 1));
     }
 
-    public List<List<A>> divide(int depth) {
+    private List<List<A>> divide(int depth) {
         return this.isEmpty()
             ? list(this)
             : divide(list(this), depth);
@@ -268,11 +270,11 @@ public abstract class List<A> {
             : divide(list.flatMap(x -> x.splitListAt(x.length() / 2)), depth / 2);
     }
 
-    public <B> List<Tuple<Result<A>, Result<B>>> zipAll(List<B> s2) {
+    <B> List<Tuple<Result<A>, Result<B>>> zipAll(List<B> s2) {
         return zipWithAll(s2, tuple -> new Tuple<>(tuple._1, tuple._2));
     }
 
-    public <B, C> List<C> zipWithAll(List<B> s2, Function<Tuple<Result<A>, Result<B>>, C> f) {
+    private <B, C> List<C> zipWithAll(List<B> s2, Function<Tuple<Result<A>, Result<B>>, C> f) {
         Function<Tuple<List<A>, List<B>>, Result<Tuple<C, Tuple<List<A>, List<B>>>>> g =
             x -> x._1.isEmpty() && x._2.isEmpty()
                 ? Result.empty()
@@ -347,8 +349,7 @@ public abstract class List<A> {
         }
     }
 
-    @SuppressWarnings("rawtypes")
-    public static final List NIL = new Nil();
+    private static final List NIL = new Nil();
 
     private List() {
     }
@@ -707,7 +708,6 @@ public abstract class List<A> {
         }
     }
 
-    @SuppressWarnings("unchecked")
     public static <A> List<A> list() {
         return NIL;
     }
@@ -721,7 +721,7 @@ public abstract class List<A> {
         return n;
     }
 
-    public static <A, B> B foldRight(List<A> list, B n, Function<A, Function<B, B>> f) {
+    private static <A, B> B foldRight(List<A> list, B n, Function<A, Function<B, B>> f) {
         return list.foldRight(n, f);
     }
 
@@ -733,7 +733,7 @@ public abstract class List<A> {
         return foldRight(list1, list2, x -> y -> new Cons<>(x, y));
     }
 
-    public static <A> List<A> flatten(List<List<A>> list) {
+    private static <A> List<A> flatten(List<List<A>> list) {
         return foldRight(list, List.<A>list(), x -> y -> concat(x, y));
     }
 
@@ -741,7 +741,7 @@ public abstract class List<A> {
         return flatten(list.foldRight(list(), x -> y -> y.cons(x.map(List::list).getOrElse(list()))));
     }
 
-    public static <A, B> Result<List<B>> traverse(List<A> list, Function<A, Result<B>> f) {
+    private static <A, B> Result<List<B>> traverse(List<A> list, Function<A, Result<B>> f) {
         return list.foldRight(Result.success(List.list()), x -> y -> Result.map2(f.apply(x), y, a -> b -> b.cons(a)));
     }
 
@@ -753,7 +753,7 @@ public abstract class List<A> {
         return () -> list.map(Supplier::get);
     }
 
-    public static <T, U> Result<List<U>> sequence(List<T> list, Function<T, Result<U>> f) {
+    static <T, U> Result<List<U>> sequence(List<T> list, Function<T, Result<U>> f) {
         List<U> result = list();
         List<T> workList = list.reverse();
         while (!workList.isEmpty()) {
@@ -793,7 +793,7 @@ public abstract class List<A> {
         return hasSubList_(list, sub).eval();
     }
 
-    public static <A> TailCall<Boolean> hasSubList_(List<A> list, List<A> sub) {
+    private static <A> TailCall<Boolean> hasSubList_(List<A> list, List<A> sub) {
         return list.isEmpty()
             ? ret(sub.isEmpty())
             : startsWith(list, sub)
@@ -801,7 +801,7 @@ public abstract class List<A> {
             : sus(() -> hasSubList_(list.tail(), sub));
     }
 
-    public static <A> Boolean startsWith(List<A> list, List<A> sub) {
+    private static <A> Boolean startsWith(List<A> list, List<A> sub) {
         return startsWith_(list, sub).eval();
     }
 
@@ -818,11 +818,11 @@ public abstract class List<A> {
     /**
      * Caution: not stack safe
      */
-    public static <A, S> List<A> unfold_(S z, Function<S, Result<Tuple<A, S>>> f) {
+    private static <A, S> List<A> unfold_(S z, Function<S, Result<Tuple<A, S>>> f) {
         return f.apply(z).map(x -> unfold_(x._2, f).cons(x._1)).getOrElse(list());
     }
 
-    public static <A, S> List<A> unfold(S z, Function<S, Result<Tuple<A, S>>> f) {
+    private static <A, S> List<A> unfold(S z, Function<S, Result<Tuple<A, S>>> f) {
         return unfold(list(), z, f).eval().reverse();
     }
 
@@ -832,7 +832,8 @@ public abstract class List<A> {
         return result.getOrElse(ret(acc));
     }
 
-    public static List<Integer> range(int start, int end) {
+    @SuppressWarnings(value = {"SameParameterValue"})
+    private static List<Integer> range(int start, int end) {
         return List.unfold(start, i -> i < end
             ? Result.success(new Tuple<>(i, i + 1))
             : Result.empty());
