@@ -2,7 +2,7 @@ package com.mit.lab.intf;
 
 /**
  * <p>Title: MIT Lib Project</p>
- * <p>Description: com.mit.lab.intf.IPayable</p>
+ * <p>Description: com.mit.lab.intf.Payable</p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: MIT Lab Co., LTD.</p>
  *
@@ -10,7 +10,7 @@ package com.mit.lab.intf;
  * @version 1.0
  * @since 11/28/2017
  */
-public interface IPayable {
+public interface Payable {
 
     void charge(double price);
 }

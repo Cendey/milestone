@@ -1,6 +1,6 @@
 package com.mit.lab.meta;
 
-import com.mit.lab.intf.IPayable;
+import com.mit.lab.intf.Payable;
 
 /**
  * <p>Title: MIT Lib Project</p>
@@ -12,7 +12,7 @@ import com.mit.lab.intf.IPayable;
  * @version 1.0
  * @since 11/28/2017
  */
-public class CreditCard implements IPayable {
+public class CreditCard implements Payable {
 
     @Override
     public void charge(double price) {
