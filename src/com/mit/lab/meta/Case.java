@@ -35,8 +35,8 @@ public class Case<T> extends Tuple<Supplier<Boolean>, Supplier<Result<T>>> {
     }
 
     @SafeVarargs
-    public static <T> Result<T> matchOption(DefaultCase<T> defaultCase, Case<T>... matches) {
-        for (Case<T> match : matches) {
+    public static <T> Result<T> matchOption(DefaultCase<T> defaultCase, Case<T>... matchCases) {
+        for (Case<T> match : matchCases) {
             if (match._1.get()) return match._2.get();
         }
         return defaultCase._2.get();
