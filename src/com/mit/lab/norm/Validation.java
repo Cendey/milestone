@@ -6,6 +6,11 @@ import com.mit.lab.intf.Function;
 
 import java.util.regex.Pattern;
 
+import static com.mit.lab.coms.Result.failure;
+import static com.mit.lab.coms.Result.success;
+import static com.mit.lab.meta.Case.matchCase;
+import static com.mit.lab.meta.Case.matchOption;
+
 /**
  * <p>Title: Blueprint</p>
  * <p>Description: com.mit.lab.norm.Validation</p>
@@ -19,11 +24,16 @@ import java.util.regex.Pattern;
 public class Validation {
 
     private static Pattern emailPattern = Pattern.compile("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$");
-    private static Function<String, Result<String>> emailChecker = emailAddress ->
-        emailAddress == null ? new Result.Failure<>("email must not be null") :
-            emailAddress.length() == 0 ? new Result.Failure<>("email must not be empty") :
-                emailPattern.matcher(emailAddress).matches() ? new Result.Success<>(emailAddress) :
-                    new Result.Failure<>(String.format("email %s is invalid.", emailAddress));
+
+    private static Function<String, Result<String>> emailChecker = email ->
+        matchOption(
+            matchCase(() -> success(email)),
+            matchCase(() -> email == null, () -> failure("email must not be null!")),
+            matchCase(() -> email.length() == 0, () -> failure("email must not be empty!")),
+            matchCase(
+                () -> !emailPattern.matcher(email).matches(),
+                () -> failure(String.format("email %s is invalid!", email)))
+        );
 
     private static Effect<String> success = s -> System.out.println(String.format("Mail sent to %s", s));
 
