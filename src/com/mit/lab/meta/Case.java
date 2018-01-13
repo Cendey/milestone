@@ -26,16 +26,16 @@ public class Case<T> extends Tuple<Supplier<Boolean>, Supplier<Result<T>>> {
         }
     }
 
-    public static <T> DefaultCase<T> matchCase(Supplier<Result<T>> value) {
+    public static <T> DefaultCase<T> match(Supplier<Result<T>> value) {
         return new DefaultCase<>(() -> true, value);
     }
 
-    public static <T> Case<T> matchCase(Supplier<Boolean> condition, Supplier<Result<T>> value) {
+    public static <T> Case<T> match(Supplier<Boolean> condition, Supplier<Result<T>> value) {
         return new Case<>(condition, value);
     }
 
     @SafeVarargs
-    public static <T> Result<T> matchOption(DefaultCase<T> defaultCase, Case<T>... optionalCases) {
+    public static <T> Result<T> options(DefaultCase<T> defaultCase, Case<T>... optionalCases) {
         for (Case<T> option : optionalCases) {
             if (option._1.get()) return option._2.get();
         }

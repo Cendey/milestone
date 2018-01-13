@@ -8,8 +8,8 @@ import java.util.regex.Pattern;
 
 import static com.mit.lab.coms.Result.failure;
 import static com.mit.lab.coms.Result.success;
-import static com.mit.lab.meta.Case.matchCase;
-import static com.mit.lab.meta.Case.matchOption;
+import static com.mit.lab.meta.Case.match;
+import static com.mit.lab.meta.Case.options;
 
 /**
  * <p>Title: Blueprint</p>
@@ -26,11 +26,9 @@ public class Validation {
     private static Pattern emailPattern = Pattern.compile("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$");
 
     private static Function<String, Result<String>> emailChecker = email ->
-        matchOption(
-            matchCase(() -> success(email)),
-            matchCase(() -> email == null, () -> failure("email must not be null!")),
-            matchCase(() -> email.length() == 0, () -> failure("email must not be empty!")),
-            matchCase(
+        options(match(() -> success(email)), match(() -> email == null, () -> failure("email must not be null!")),
+            match(() -> email.length() == 0, () -> failure("email must not be empty!")),
+            match(
                 () -> !emailPattern.matcher(email).matches(),
                 () -> failure(String.format("email %s is invalid!", email)))
         );
