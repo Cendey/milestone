@@ -15,14 +15,14 @@ import com.mit.lab.intf.Supplier;
  */
 public class Case<T> extends Tuple<Supplier<Boolean>, Supplier<Result<T>>> {
 
-    private Case(Supplier<Boolean> booleanSupplier, Supplier<Result<T>> resultSupplier) {
-        super(booleanSupplier, resultSupplier);
+    private Case(Supplier<Boolean> condition, Supplier<Result<T>> result) {
+        super(condition, result);
     }
 
     private static class DefaultCase<T> extends Case<T> {
 
-        private DefaultCase(Supplier<Boolean> booleanSupplier, Supplier<Result<T>> resultSupplier) {
-            super(booleanSupplier, resultSupplier);
+        private DefaultCase(Supplier<Boolean> condition, Supplier<Result<T>> result) {
+            super(condition, result);
         }
     }
 
@@ -30,8 +30,8 @@ public class Case<T> extends Tuple<Supplier<Boolean>, Supplier<Result<T>>> {
         return new DefaultCase<>(() -> true, value);
     }
 
-    public static <T> Case<T> match(Supplier<Boolean> condition, Supplier<Result<T>> value) {
-        return new Case<>(condition, value);
+    public static <T> Case<T> match(Supplier<Boolean> condition, Supplier<Result<T>> result) {
+        return new Case<>(condition, result);
     }
 
     @SafeVarargs
