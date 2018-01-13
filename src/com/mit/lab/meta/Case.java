@@ -35,10 +35,10 @@ public class Case<T> extends Tuple<Supplier<Boolean>, Supplier<Result<T>>> {
     }
 
     @SafeVarargs
-    public static <T> Result<T> options(DefaultCase<T> defaultCase, Case<T>... optionalCases) {
-        for (Case<T> option : optionalCases) {
+    public static <T> Result<T> options(DefaultCase<T> defaultOption, Case<T>... otherOptions) {
+        for (Case<T> option : otherOptions) {
             if (option._1.get()) return option._2.get();
         }
-        return defaultCase._2.get();
+        return defaultOption._2.get();
     }
 }
