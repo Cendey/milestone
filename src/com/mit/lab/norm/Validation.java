@@ -35,7 +35,7 @@ public class Validation {
                 () -> failure(String.format("email %s is invalid!", email)))
         );
 
-    private static Effect<String> success = s -> System.out.println(String.format("Mail sent to %s", s));
+    private static Effect<String> success = s -> System.out.println(String.format("Mail sent to: %s", s));
 
     private static Effect<String> failure = s -> System.out.println(String.format("Error message logged: %s", s));
 
