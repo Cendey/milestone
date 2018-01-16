@@ -8,7 +8,7 @@
     <test verbose="1" name="Radar" annotations="JDK">
         <groups>
             <define name="single">
-                <include name="validation"/>
+                <include name="utils"/>
             </define>
             <define name="all">
                 <include name="fluent-mailer"/>
@@ -29,6 +29,7 @@
                 <include name="script"/>
                 <include name="function"/>
                 <include name="validation"/>
+                <include name="utils"/>
             </define>
             <run>
                 <include name="single"/>

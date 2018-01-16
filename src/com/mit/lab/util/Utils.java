@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * <p>Title: Blueprint</p>
- * <p>Description: com.mit.lab.util.CollectionUtilities</p>
+ * <p>Description: com.mit.lab.util.Utils</p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: Kewill Co., Ltd</p>
  *
@@ -17,7 +17,7 @@ import java.util.List;
  * @version 1.0
  * @date 12/16/2017
  */
-public class CollectionUtilities {
+public class Utils {
 
     public static <T> List<T> list() {
         return Collections.emptyList();
@@ -65,8 +65,7 @@ public class CollectionUtilities {
     }
 
     public static <T, U> U foldRight(List<T> ts, U identity, Function<T, Function<U, U>> f) {
-        return ts.isEmpty() ? identity : f.apply(head(ts)).apply(
-            foldRight(tail(ts), identity, f));
+        return ts.isEmpty() ? identity : f.apply(head(ts)).apply(foldRight(tail(ts), identity, f));
     }
 
     public static <T> List<T> append(List<T> list, T t) {
@@ -84,8 +83,7 @@ public class CollectionUtilities {
     }
 
     public static <T> List<T> reverse2(List<T> list) {
-        return foldLeft(list, list(),
-            x -> y -> foldLeft(x, list(y), a -> b -> append(a, b)));
+        return foldLeft(list, list(), x -> y -> foldLeft(x, list(y), a -> b -> append(a, b)));
     }
 
     public static <T, U> List<U> map(List<T> list, Function<T, U> f) {

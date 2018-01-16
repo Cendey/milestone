@@ -7,6 +7,7 @@ import com.mit.lab.norm.FileWriterEAM;
 import com.mit.lab.norm.FireEngines;
 import com.mit.lab.norm.FluentMailer;
 import com.mit.lab.norm.Holder;
+import com.mit.lab.util.Utils;
 import org.testng.annotations.DataProvider;
 
 import java.io.IOException;
@@ -233,6 +234,15 @@ public class DataProviderFactory {
             new Object[]{null},
             new Object[]{""},
             new Object[]{"john.doe@acme.com"}
+        };
+    }
+
+    @DataProvider(name = "utils-factory")
+    public static Object[][] generateUtility() {
+        Function<Integer, Function<Integer, Integer>> function = x -> y -> x + y;
+        return new Object[][]{
+            new Object[]{Utils.list(1, 2, 3, 4, 5), 0, function},
+            new Object[]{Utils.list(5, 4, 3, 2, 1), 0, function},
         };
     }
 }
