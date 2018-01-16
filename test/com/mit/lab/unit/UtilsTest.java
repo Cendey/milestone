@@ -40,9 +40,9 @@ public class UtilsTest {
     @Test(dataProvider = "utils-factory", dataProviderClass = DataProviderFactory.class, groups = {"utils"})
     public void testFold(
         List<Integer> elements, Integer identity, Function<Integer, Function<Integer, Integer>> function) {
-        System.out.println(String.format("########### Original elements sequence: %s ##########", elements.toString()));
+        System.out.println(String.format("########## Original elements sequence: %s ##########", elements.toString()));
         Integer result = Utils.foldLeft(elements, identity, function);
-        System.out.println(String.format("########## Fold elements is: %s #########", result));
+        System.out.println(String.format("########## Fold elements is: %s ##########", result));
     }
 
     @Parameters({"close-info"})
