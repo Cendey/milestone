@@ -56,10 +56,7 @@ public class CollectionUtilities {
         return Collections.unmodifiableList(workList);
     }
 
-    public static <T, U> U foldLeft(
-        List<T> ts,
-        U identity,
-        Function<U, Function<T, U>> f) {
+    public static <T, U> U foldLeft(List<T> ts, U identity, Function<U, Function<T, U>> f) {
         U result = identity;
         for (T t : ts) {
             result = f.apply(result).apply(t);
@@ -67,10 +64,7 @@ public class CollectionUtilities {
         return result;
     }
 
-    public static <T, U> U foldRight(
-        List<T> ts,
-        U identity,
-        Function<T, Function<U, U>> f) {
+    public static <T, U> U foldRight(List<T> ts, U identity, Function<T, Function<U, U>> f) {
         return ts.isEmpty() ? identity : f.apply(head(ts)).apply(
             foldRight(tail(ts), identity, f));
     }
@@ -106,10 +100,7 @@ public class CollectionUtilities {
         return foldRight(list, list(), x -> y -> prepend(f.apply(x), y));
     }
 
-    public static <T> List<T> unfold(
-        T seed,
-        Function<T, T> f,
-        Function<T, Boolean> p) {
+    public static <T> List<T> unfold(T seed, Function<T, T> f, Function<T, Boolean> p) {
         List<T> result = new ArrayList<>();
         T temp = seed;
         while (p.apply(temp)) {
