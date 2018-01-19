@@ -26,8 +26,8 @@ public class Case<T> extends Tuple<Supplier<Boolean>, Supplier<Result<T>>> {
         }
     }
 
-    public static <T> DefaultCase<T> match(Supplier<Result<T>> value) {
-        return new DefaultCase<>(() -> true, value);
+    public static <T> DefaultCase<T> match(Supplier<Result<T>> result) {
+        return new DefaultCase<>(() -> true, result);
     }
 
     public static <T> Case<T> match(Supplier<Boolean> condition, Supplier<Result<T>> result) {
