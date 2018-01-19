@@ -239,10 +239,11 @@ public class DataProviderFactory {
 
     @DataProvider(name = "utils-factory")
     public static Object[][] generateUtility() {
-        Function<Integer, Function<Integer, Integer>> function = x -> y -> x + y;
+        Function<Integer, Function<Integer, Integer>> sum = x -> y -> x + y;
+        Function<Integer, Function<Integer, Integer>> mul = x -> y -> x * y;
         return new Object[][]{
-            new Object[]{Utils.list(1, 2, 3, 4, 5), 0, function},
-            new Object[]{Utils.list(5, 4, 3, 2, 1), 0, function},
+            new Object[]{Utils.list(1, 2, 3, 4, 5), 0, sum},
+            new Object[]{Utils.list(5, 4, 3, 2, 1), 1, mul},
         };
     }
 }
